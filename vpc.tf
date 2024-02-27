@@ -72,7 +72,7 @@ resource "aws_route_table_association" "public_subnet_2_rt_association" {
 }
 
 # create private app subnet az1
-resource "aws_subnet" "private_app_subnet_az1" {
+resource "" {
   vpc_id                   = aws_vpc.vpc.id
   cidr_block               = var.private_app_subnet_az1_cidr
   availability_zone        = data.aws_availability_zones.available_zones.names[0]
